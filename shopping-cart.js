@@ -17,8 +17,8 @@ const countTheSumPrice = function () { // 4
 
 const updateShoppingCartHTML = function () {  // 3
 	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
-	document.cookie = "NK; expires=Fri, 29 Aug 2022 12:00:00 UTC";
-	document.cookie = JSON.stringify(productsInCart)+"; expires=Fri, 30 Aug 2022 12:00:00 UTC";
+	document.cookie = "NK; expires=Fri, 09 sep 2022 12:00:00 UTC";
+	document.cookie = JSON.stringify(productsInCart)+"; expires=Fri, 15 Aug 2022 12:00:00 UTC";
 	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
